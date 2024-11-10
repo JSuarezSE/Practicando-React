@@ -1,16 +1,33 @@
+import { TwitterFollowCard } from "./TwitterFollowCard";
+import "./app.css";
 export function App() {
+  const formatUserName = (userName) => `@${userName}`;
   return (
-    <article style={{ display: "flex" }}>
-      <header>
-        <img alt="avatar" src="https://unavatar.io/kikobeats"></img>
-        <div>
-          <strong>Josue</strong>
-          <span>@josue</span>
-        </div>
-      </header>
-      <aside>
-        <button>Seguir</button>
-      </aside>
-    </article>
+    <section className="app">
+      <TwitterFollowCard
+        formatUserName={formatUserName}
+        isFollowing
+        username="josue"
+        name="josuexd"
+      />
+      <TwitterFollowCard
+        formatUserName={formatUserName}
+        isFollowing
+        username="josue"
+        name="josuexd"
+      />
+      <TwitterFollowCard
+        formatUserName={formatUserName}
+        isFollowing={false}
+        username="josue"
+        name="josuexd"
+      />
+      <TwitterFollowCard
+        formatUserName={formatUserName}
+        isFollowing
+        username="josue"
+        name="josuexd"
+      />
+    </section>
   );
 }
