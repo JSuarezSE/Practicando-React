@@ -29,7 +29,7 @@ export function App() {
             key={userName}
             formatUserName={formatUserName}
             s
-            userName={userName}
+            username={userName}
             name={name}
             intialIsFollowing={isFollowing}
           ></TwitterFollowCard>
